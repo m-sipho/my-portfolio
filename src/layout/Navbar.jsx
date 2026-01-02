@@ -13,15 +13,15 @@ export const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
     return (
         <header className="glass fixed top-0 left-0 right-0 bg-transparent py-5 border-b border-gray-200 shadow-md z-50">
-            <nav className="container mx-auto px-6  flex items-center justify-between">
-                <a href="#" className="text-xl font-bold tracking-tight hover:text-text-muted flex gap-2">
+            <nav className="container mx-auto px-6  flex items-center justify-between text-text-muted">
+                <a href="#" className="text-xl font-bold tracking-tight hover:text-text-heading flex gap-2">
                     <svg id="logo"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z" /></svg>
                     Mthokozisi Hlatshwayo
                 </a>
 
                 {/* Desktop Nav */}
                 <div>
-                    <div className="hidden md:flex gap-2">
+                    <div className="hidden md:flex gap-2 text-text-muted">
                         {navLinks.map((link, index) => (
                             <a href={link.href} key={index} className="nav-link group relative font-medium mx-2 my-2 hover:text-black transition-colors">
                                 {link.label}
