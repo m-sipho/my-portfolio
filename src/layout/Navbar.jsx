@@ -41,14 +41,14 @@ export const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button className="md:hidden p-2 cursor-pointer" onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
+                <button className="md:hidden p-2 cursor-pointer text-text-muted" onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
                     {isMobileMenuOpen ? <X Menu size={24}/> : <Menu size={24}/>}
                 </button>
             </nav>
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden glass animate-fade-in">
+                <div className="md:hidden glass animate-fade-in text-text-muted">
                     <div className='container mx-auto px-6 py-6 flex flex-col gap-4'>
                         {navLinks.map((link, index) => (
                             <a href={link.href} key={index} className="text-lg py-2 hover:text-black transition-colors">
